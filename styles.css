@@ -5,103 +5,106 @@
     box-sizing: border-box;
 }
 
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f9f9f9;
+    background-color: #f8f9fa;
     color: #333;
+    line-height: 1.6;
 }
 
+/* Header Styles */
 header {
-    background-color: #4CAF50;
+    background-color: #28a745;
     color: white;
-    padding: 1rem;
     text-align: center;
+    padding: 20px;
 }
 
-header .logo h1 {
-    font-size: 2rem;
-    margin-bottom: 0;
+header h1 {
+    font-size: 3em;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 1rem 0;
+header p {
+    font-size: 1.2em;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-.hero {
-    background-color: #f2f2f2;
+/* Intro Section */
+.intro {
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 20px;
+    background-color: #f1f1f1;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+.intro h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.25rem;
+.intro p {
+    font-size: 1.1em;
 }
 
-section {
-    padding: 2rem;
-    margin: 1rem 0;
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 20px;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+.gallery h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.product-container {
+.image-gallery {
     display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 20px;
 }
 
-.product {
-    background-color: white;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    width: 25%;
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Quiz Section */
+.quiz {
     text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
 }
 
-.product h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+.quiz h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.product p {
-    font-size: 1rem;
+.quiz label, .quiz select, .quiz button {
+    font-size: 1.1em;
+    margin-top: 10px;
 }
 
-footer {
-    background-color: #4CAF50;
+.quiz button {
+    background-color: #28a745;
     color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-footer p {
-    font-size: 1rem;
+.quiz button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
