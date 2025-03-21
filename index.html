@@ -3,63 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Pickles</title>
+    <title>Pickles World</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <h1>Basic Pickles</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Pickles World</h1>
+        <p>Your favorite place to explore the world of pickles!</p>
     </header>
 
-    <section id="home" class="hero">
-        <h2>Welcome to Basic Pickles</h2>
-        <p>Handmade pickles made with love and care</p>
+    <section class="intro">
+        <h2>What are Pickles?</h2>
+        <p>Pickles are cucumbers that have been preserved in brine or vinegar. They are tangy, crunchy, and delicious!</p>
     </section>
 
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product-container">
-            <div class="product">
-                <h3>Cucumber Pickles</h3>
-                <p>Crunchy and tangy cucumber pickles.</p>
-            </div>
-            <div class="product">
-                <h3>Carrot Pickles</h3>
-                <p>Spicy and sweet carrot pickles.</p>
-            </div>
-            <div class="product">
-                <h3>Mixed Pickles</h3>
-                <p>A blend of various pickled vegetables.</p>
-            </div>
+    <section class="gallery">
+        <h2>Pickle Varieties</h2>
+        <div class="image-gallery">
+            <img src="https://via.placeholder.com/150?text=Pickle+Jar+1" alt="Pickle Jar 1">
+            <img src="https://via.placeholder.com/150?text=Pickle+Jar+2" alt="Pickle Jar 2">
+            <img src="https://via.placeholder.com/150?text=Pickle+Jar+3" alt="Pickle Jar 3">
         </div>
     </section>
 
-    <section id="about">
-        <h2>About Us</h2>
-        <p>At Basic Pickles, we specialize in crafting delicious, homemade pickles from the freshest ingredients. Our pickles are made in small batches to ensure quality and taste.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions? Get in touch with us:</p>
-        <address>
-            <p>Email: <a href="mailto:contact@basicpickles.com">contact@basicpickles.com</a></p>
-            <p>Phone: +123 456 7890</p>
-        </address>
+    <section class="quiz">
+        <h2>Guess the Pickle Flavor!</h2>
+        <p>Pick your guess below and click "Submit" to see if you're correct!</p>
+        <label for="pickle-flavor">Choose a flavor:</label>
+        <select id="pickle-flavor">
+            <option value="dill">Dill</option>
+            <option value="sweet">Sweet</option>
+            <option value="spicy">Spicy</option>
+        </select>
+        <button onclick="checkFlavor()">Submit</button>
+        <p id="result"></p>
     </section>
 
     <footer>
-        <p>&copy; 2025 Basic Pickles. All Rights Reserved.</p>
+        <p>&copy; 2025 Pickles World. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
